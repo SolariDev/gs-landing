@@ -20,7 +20,7 @@ Este proyecto demuestra cómo posicionar un negocio en **Google de forma orgáni
 ---
 
 ## 🌐 Demo
-👉 [Ver sitio en Vercel](https://gsdesarrolloweb.vercel.app)
+👉 [Ver sitio en Vercel](https://gs-desarrollo-web.vercel.app/)
 
 ---
 
