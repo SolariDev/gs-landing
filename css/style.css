@@ -173,14 +173,14 @@ body {
 
 .btn-whatsapp {
   position: fixed;
-  top: 1.5rem;
+  bottom: 1.5rem;
   right: 1.5rem;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.9rem 1.8rem;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
   background: rgba(0, 255, 128, 0.08);
-  /* translúcido verde */
   color: rgba(0, 255, 128, 0.85);
   border-radius: 25px;
   text-decoration: none;
@@ -354,7 +354,7 @@ section h2 {
 .btn-top {
   position: fixed;
   bottom: 1.5rem;
-  right: 1.5rem;
+  left: 1.5rem;
   width: 30px;
   height: 30px;
   font-size: 1.1rem;
