@@ -97,7 +97,7 @@ body {
 .logo-hero {
   display: block;
   margin: 0 auto 1rem auto;
-  max-width: 120px;
+  max-width: 220px;
   animation: logoPulse 4s ease-in-out infinite;
 }
 
