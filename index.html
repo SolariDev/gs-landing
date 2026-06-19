@@ -5,98 +5,106 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <title>GS - Desarrollo Web</title>
-  <meta name="description"
-    content="Páginas web, landing pages y aplicaciones con SEO para tu negocio">
+  <title>gsWeb-Neon</title>
+  <meta name="description" content="Páginas web, landing pages y aplicaciones con SEO para tu negocio">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
 </head>
 
 <body>
-  <canvas id="network"></canvas>
-  <nav class="navbar">
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-    <ul id="menu">
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#redes">Redes Sociales</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-    </ul>
-  </nav>
+  <div class="preloader">
+    <div class="logo">GSWEB NEON</div>
+  </div>
+  <main>
+    <canvas id="network"></canvas>
+    <nav class="navbar">
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul id="menu">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#redes">Redes Sociales</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
 
-  <header class="hero">
-    <img src="img/isotipo.png" alt="Logo GS" class="logo-hero">
-    <h1 class="wave">Desarrollo Web</h1>
-    <p>Juntos llevamos tus ideas al mundo digital para llegar más lejos</p>
-  </header>
+    <header class="hero">
+      <img src="img/logo.png" alt="Logo GS" class="logo-hero">
+      <h1>Desarrollo Web</h1>
+      <p>Juntos llevamos tus ideas al mundo digital para llegar más lejos</p>
+    </header>
 
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Aplicaciones Web</h3>
-        <p>Soluciones web adaptadas a tu organización.</p>
-        <p>Aplicaciones que optimizan la gestión y mejoran procesos.</p>
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Aplicaciones Web</h3>
+          <p>Soluciones web adaptadas a tu organización.</p>
+          <p>Aplicaciones que optimizan la gestión y mejoran procesos.</p>
+        </div>
+        <div class="card">
+          <h3>Landing Pages</h3>
+          <p>Páginas únicas para impulsar tu negocio.</p>
+          <p>Integración de redes sociales para potenciar tu presencia digital.</p>
+        </div>
+        <div class="card">
+          <h3>Páginas Web</h3>
+          <p>Diseño institucional moderno y profesional.</p>
+          <p>SEO (Optimización en Motores de Busqueda) integrado para visibilidad y crecimiento orgánico.</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Landing Pages</h3>
-        <p>Páginas únicas para impulsar tu negocio.</p>
-        <p>Integración de redes sociales para potenciar tu presencia digital.</p>
+    </section>
+
+    <section id="redes">
+      <h2>Redes Sociales</h2>
+      <p>¿Tenés una idea en mente o querés darle más fuerza a tu negocio?
+        Conectemos en redes y descubrí cómo transformar tu proyecto en algo visible y atractivo.
+      </p>
+
+      <p class="contact-mail">Contamelo por correo a:</p>
+      <div class="mail-link">
+        <a href="mailto:gabrielsolari75@gmail.com">
+          <img src="img/gmail.png" alt="Gmail">
+          <span>gabrielsolari75@gmail.com</span>
+        </a>
       </div>
-      <div class="card">
-        <h3>Páginas Web</h3>
-        <p>Diseño institucional moderno y profesional.</p>
-        <p>SEO (Optimización en Motores de Busqueda) integrado para visibilidad y crecimiento orgánico.</p>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com/Gabriel.Solari.560" target="_blank">
+          <img src="img/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/solarigabriel/" target="_blank">
+          <img src="img/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/gabriel-solari-490939278/" target="_blank">
+          <img src="img/linkedin.png" alt="LinkedIn">
+        </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="redes">
-    <h2>Redes Sociales</h2>
-    <p>¿Tenés una idea en mente o querés darle más fuerza a tu negocio?
-      Conectemos en redes y descubrí cómo transformar tu proyecto en algo visible y atractivo.
-    </p>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>Podés ver el código de mis proyectos en:</p>
+      <div class="github-link">
+        <a href="https://github.com/SolariDev" target="_blank">
+          <img src="img/github.png" alt="GitHub">
+          <span>github.com/SolariDev</span>
+        </a>
+      </div>
+      <img src="img/logo.png" alt="Logo GS">
+    </section>
 
-    <p class="contact-mail">Contamelo por correo a:</p>
-    <div class="mail-link">
-      <a href="mailto:gabrielsolari75@gmail.com">
-        <img src="img/gmail.png" alt="Gmail">
-        <span>gabrielsolari75@gmail.com</span>
-      </a>
-    </div>
+    <footer>
+      <p>© 2026 SolariDev</p>
+    </footer>
 
-    <div class="social-icons">
-      <a href="https://www.facebook.com/Gabriel.Solari.560" target="_blank">
-        <img src="img/facebook.png" alt="Facebook">
-      </a>
-      <a href="https://www.instagram.com/solarigabriel/" target="_blank">
-        <img src="img/instagram.png" alt="Instagram">
-      </a>
-      <a href="https://www.linkedin.com/in/gabriel-solari-490939278/" target="_blank">
-        <img src="img/linkedin.png" alt="LinkedIn">
-      </a>
-    </div>    
-  </section>
+    <a href="https://wa.me/59896239919?text=Hola%20Gabriel,%20vi%20tu%20landing%20y%20me%20interes%C3%B3%20tu%20servicio.%20Me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n."
+      class="btn-whatsapp">
+      <img src="img/whatsapp.png" alt="WhatsApp" class="icon">
+    </a>
+    <button id="btn-top" class="btn-top">↑</button>
+  </main>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>Podés ver el código de mis proyectos en:</p>
-    <div class="github-link">
-      <a href="https://github.com/SolariDev" target="_blank">
-        <img src="img/github.png" alt="GitHub">
-        <span>github.com/SolariDev</span>
-      </a>
-    </div>
-    <img src="img/logo.png" alt="Logo GS">
-  </section>
-
-  <footer>
-    <p>© 2026 GS - Desarrollo Web</p>
-  </footer>
-
-  <a href="https://wa.me/59896239919?text=Hola%20Gabriel,%20vi%20tu%20landing%20y%20me%20interes%C3%B3%20tu%20servicio.%20Me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n."
-    class="btn-whatsapp">
-    <img src="img/whatsapp.png" alt="WhatsApp" class="icon">
-  </a>
-  <button id="btn-top" class="btn-top">↑</button>
+  <script src="js/preloader.js"></script>
   <script src="js/network.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/scroll.js"></script>
