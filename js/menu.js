@@ -10,10 +10,13 @@ toggle.addEventListener('click', function() {
 window.addEventListener('scroll', function() {
   if (window.innerWidth > 768) { // escritorio
     if (window.scrollY > 100) {
-      toggle.style.display = 'block'; // aparece el botón
+      toggle.classList.add('visible');   // aparece con scroll
     } else {
-      toggle.style.display = 'none';  // se oculta arriba
-      menu.classList.remove('show');  // cerramos menú si volvés arriba
+      toggle.classList.remove('visible'); // se oculta arriba
+      menu.classList.remove('show');      // cerramos menú si volvés arriba
     }
+  } else {
+    toggle.classList.add('visible'); // en móvil siempre visible
   }
 });
+

@@ -40,6 +40,7 @@ body {
   position: absolute;
   top: 3rem;
   left: 4rem;
+  z-index: 1000;
 }
 
 .navbar ul {
@@ -57,11 +58,14 @@ body {
   transition: color 0.3s ease;
 }
 
-.navbar a:hover { color: var(--color-link-hover); }
+.navbar a:hover { 
+  color: var(--color-link-hover); 
+}
 
-.menu-toggle {
+/* Botón hamburguesa */
+#menu-toggle {
   position: fixed;
-  display: none; /* oculto por defecto en escritorio */
+  display: none; /* oculto por defecto */
   font-size: 1.5rem;
   font-weight: 600;
   cursor: pointer;
@@ -69,10 +73,14 @@ body {
   margin-left: -40px;
 }
 
-/* lista visible por defecto en escritorio */
+#menu-toggle.visible {
+  display: block; /* aparece cuando JS agrega la clase */
+}
+
+/* Lista visible por defecto en escritorio */
 #menu { 
   display: flex;
-  flex-direction: column;   /* vertical */
+  flex-direction: column;
   gap: 0.5rem;
 }
 
@@ -89,17 +97,14 @@ body {
   z-index: 1000;
 }
 
+/* Ajustes para móvil */
 @media (max-width: 768px) { 
-  .navbar { z-index: 1000; }
-
-  .menu-toggle { display: block; } /* visible siempre en móvil */
-
   #menu {
     display: none; /* oculto en móvil */
     flex-direction: column;
     background: rgba(0, 255, 128, 0.05);
     position: fixed;
-    top: 6rem; /* mismo ajuste para móvil */
+    top: 6rem;
     left: 0;
     width: max-content;
     padding: 1rem;
@@ -107,14 +112,15 @@ body {
     z-index: 1000;
   }
 
-  #menu.show { display: flex; }
+  #menu.show { 
+    display: flex; 
+  }
 }
-
 
 .hero {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;  
   padding: 4rem 2rem 2rem;
   background: none;
 }
@@ -180,6 +186,17 @@ body {
 }
 
 @keyframes textFade { to { opacity: 1; } }
+
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.aparece {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .btn-whatsapp {
   position: fixed;
