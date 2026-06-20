@@ -166,7 +166,7 @@ body {
   font-weight: 400;
   font-size: 1.8rem;
   font-style: italic;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   text-shadow: 
     0 0 6px var(--azul-claro),
     0 0 12px var(--azul-medio);
@@ -176,6 +176,7 @@ body {
   opacity: 0;
   animation: textFade 2s ease forwards 1.8s;
   text-align: center;
+  line-height: 1.6;
 }
 
 @keyframes textFade { to { opacity: 1; } }
