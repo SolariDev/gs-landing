@@ -40,16 +40,17 @@
           <h3>Aplicaciones Web</h3>
           <p>Soluciones web adaptadas a tu organización.</p>
           <p>Aplicaciones que optimizan la gestión y mejoran procesos.</p>
+          <p>Siempre disponibles desde cualquier dispositivo para simplificar tareas o consultar información en tiempo real.</p>
         </div>
         <div class="card">
           <h3>Landing Pages</h3>
-          <p>Páginas únicas para impulsar tu negocio.</p>
-          <p>Integración de redes sociales para potenciar tu presencia digital.</p>
+          <p>Páginas únicas para impulsar tu negocio y convertir visitas en oportunidades.</p>
+          <p>Diseñadas para mostrar el valor de tu proyecto y conectar con tu público en el entorno digital.</p>
         </div>
         <div class="card">
           <h3>Páginas Web</h3>
-          <p>Diseño institucional moderno y profesional.</p>
-          <p>SEO (Optimización en Motores de Busqueda) integrado para visibilidad y crecimiento orgánico.</p>
+          <p>Presencia digital completa, mejorando lo que ya tenés o creando desde cero.</p>
+          <p>SEO técnico integrado para que tu página gane visibilidad y crezca de forma orgánica.</p>
         </div>
       </div>
     </section>
@@ -62,11 +63,26 @@
 
       <p class="contact-mail">Contamelo por correo a:</p>
       <div class="mail-link">
-        <a href="mailto:gabrielsolari75@gmail.com">
+        <a href="#" id="mail-link">
           <img src="img/gmail.png" alt="Gmail">
           <span>gabrielsolari75@gmail.com</span>
         </a>
       </div>
+
+      <script>
+        document.getElementById("mail-link").addEventListener("click", function (e) {
+          e.preventDefault();
+        
+          const gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=gabrielsolari75@gmail.com";
+          const win = window.open(gmailUrl, "_blank");
+
+          setTimeout(() => {
+            if (!win || win.closed || typeof win.closed === "undefined") {
+              window.location.href = "mailto:gabrielsolari75@gmail.com";
+            }
+          }, 1000);
+        });
+      </script>
 
       <div class="social-icons">
         <a href="https://www.facebook.com/Gabriel.Solari.560" target="_blank">
