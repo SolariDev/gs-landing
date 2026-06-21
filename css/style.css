@@ -36,6 +36,28 @@ body {
   z-index: -1;
 }
 
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-deep);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: 9999;
+}
+
+.logo {
+  font-size: 6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  perspective: 800px;
+  color: var(--azul-oscuro);
+  white-space: nowrap;
+  text-align: center;
+}
+
+main { opacity: 0; }
+
 .navbar {
   position: absolute;
   top: 3rem;
@@ -58,11 +80,8 @@ body {
   transition: color 0.3s ease;
 }
 
-.navbar a:hover { 
-  color: var(--color-link-hover); 
-}
+.navbar a:hover { color: var(--color-link-hover); }
 
-/* Botón hamburguesa */
 #menu-toggle {
   position: fixed;
   display: none; /* oculto por defecto */
@@ -73,11 +92,8 @@ body {
   margin-left: -40px;
 }
 
-#menu-toggle.visible {
-  display: block; /* aparece cuando JS agrega la clase */
-}
+#menu-toggle.visible { display: block; }
 
-/* Lista visible por defecto en escritorio */
 #menu { 
   display: flex;
   flex-direction: column;
@@ -89,7 +105,7 @@ body {
   flex-direction: column;
   background: rgba(0, 255, 128, 0.05);
   position: fixed;
-  top: 6rem; /* bajado para no tapar la hamburguesa */
+  top: 6rem;
   left: 0;
   width: max-content;
   padding: 1rem;
@@ -97,10 +113,9 @@ body {
   z-index: 1000;
 }
 
-/* Ajustes para móvil */
 @media (max-width: 768px) { 
   #menu {
-    display: none; /* oculto en móvil */
+    display: none;
     flex-direction: column;
     background: rgba(0, 255, 128, 0.05);
     position: fixed;
@@ -112,9 +127,7 @@ body {
     z-index: 1000;
   }
 
-  #menu.show { 
-    display: flex; 
-  }
+  #menu.show { display: flex; }
 }
 
 .hero {
@@ -148,12 +161,11 @@ body {
   50% { transform: scale(1.05); filter: drop-shadow(0 0 12px var(--azul-oscuro)); }
 }
 
-/* Título con gradiente animado */
 .hero h1 {
   font-size: 3rem;
   margin: 0;
   background: linear-gradient(90deg, var(--azul-claro), var(--azul-medio), var(--azul-oscuro));
-  background-size: 300% 100%; /* más ancho para efecto fluido */
+  background-size: 300% 100%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -166,23 +178,19 @@ body {
   100% { background-position: 100% 50%; }
 }
 
-/* Propósito */
 .hero p {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 1.8rem;
-  font-style: italic;
-  letter-spacing: 1px;
-  text-shadow: 
-    0 0 6px var(--azul-claro),
-    0 0 12px var(--azul-medio);
-  margin: 1.5rem auto 0 auto;
-  max-width: 600px;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
   color: var(--color-parrafo);
+  margin: 2rem auto 0 auto;
+  max-width: 700px;
   opacity: 0;
   animation: textFade 2s ease forwards 1.8s;
   text-align: center;
-  line-height: 1.6;
+  line-height: 1.8;
+  text-shadow: 0 1px 2px var(--color-sombra);
 }
 
 @keyframes textFade { to { opacity: 1; } }
@@ -217,9 +225,7 @@ section.aparece {
   height: 30px; 
 }
 
-.btn-whatsapp:hover {
-  transform: scale(1.05);  
-}
+.btn-whatsapp:hover { transform: scale(1.05); }
 
 section { text-align: center; padding: 4rem 2rem; }
 
@@ -305,10 +311,7 @@ section h2 {
   font-weight: 500;
 }
 
-.mail-link {
-  margin-top: -1rem;
-  text-align: center;
-}
+.mail-link { margin-top: -1rem; text-align: center; }
 
 .mail-link a {
   display: inline-flex;
@@ -319,9 +322,7 @@ section h2 {
   font-weight: 600;
 }
 
-.mail-link a:hover {
-  color: var(--color-link-hover);
-}
+.mail-link a:hover { color: var(--color-link-hover); }
 
 .mail-link a img {
   width: 24px;
@@ -364,25 +365,3 @@ section h2 {
   color: var(--color-link-hover);
   transform: scale(1.1);
 }
-
-.preloader {
-  position: fixed;
-  inset: 0;
-  background: var(--bg-deep);
-  display: grid;
-  place-items: center;
-  visibility: hidden;
-  z-index: 9999;  /* encima de todo */
-}
-
-.logo {
-  font-size: 6rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  perspective: 800px;
-  color: var(--azul-oscuro);
-  white-space: nowrap;
-  text-align: center;
-}
-
-main { opacity: 0; }
