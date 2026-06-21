@@ -20,3 +20,10 @@ window.addEventListener('scroll', function() {
   }
 });
 
+document.addEventListener('click', function(e) {
+  if (menu.classList.contains('show') && 
+      !menu.contains(e.target) && 
+      e.target !== toggle) {
+    menu.classList.remove('show');
+  }
+});
